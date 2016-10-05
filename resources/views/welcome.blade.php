@@ -14,10 +14,14 @@
         <style>
             html, body {
                 background-color: #fff;
+                background-image: url('image/background/background_agaja.jpg');
+                background-repeat: no-repeat;
+                background-position: top center;
+                background-attachment: fixed;
                 color: #636b6f;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
-                height: 100vh;
+                height: 1000vh;
                 margin: 0;
             }
 
