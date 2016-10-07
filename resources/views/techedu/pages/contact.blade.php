@@ -11,7 +11,7 @@
     <div class="breadcrumb-bar">
         <ul class="breadcrumb">
             <li><a href="/">{{trans('page.menu.home')}}</a></li>
-            <li>About Us</li>
+            <li>{{trans('page.menu.about')}}</li>
         </ul>
     </div>
 </div>
