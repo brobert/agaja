@@ -20,3 +20,8 @@ Route::get('/class/list', function () { return view('techedu/pages/class/list');
 Route::get('/class/detail', function () { return view('techedu/pages/class/detail'); })->name('detail');
 
 Route::get('/contact', function () { return view('techedu/pages/contact'); })->name('contact');
+
+Route::group( ['prefix' => 'teacher'], function() {
+    Route::get( '/', 'TeacherController@index')->name('teacher_list');
+    Route::get( '/{id}', 'TeacherController@show')->name('teacher_show');
+});
