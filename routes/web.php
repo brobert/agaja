@@ -17,6 +17,6 @@ Route::get('/about', function () { return view('techedu/pages/about'); });
 
 Route::get('/class/grid', function () { return view('techedu/pages/class/grid'); })->name('class_grid');
 Route::get('/class/list', function () { return view('techedu/pages/class/list'); })->name('class_list');
-Route::get('/class/detail', function () { return view('techedu/pages/class/detail'); })->name('detail');
+Route::get('/class/detail', function () { return view('techedu/pages/class/detail'); })->name('class_detail');
 
 Route::get('/contact', function () { return view('techedu/pages/contact'); })->name('contact');

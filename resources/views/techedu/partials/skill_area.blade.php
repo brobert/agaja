@@ -16,7 +16,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -25,7 +25,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -34,7 +34,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -43,7 +43,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -52,7 +52,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -61,7 +61,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -70,7 +70,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -79,7 +79,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -88,7 +88,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -97,7 +97,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>
@@ -106,7 +106,7 @@
             <div class="col-md-3">
                 <div class="experience-skill-wrapper">
                     <div class="skill-bars orange">
-                        <div class="skill-bar-item">
+                        <div class="skill-bar-item centered">
                             Playing Science
                         </div>
                     </div>

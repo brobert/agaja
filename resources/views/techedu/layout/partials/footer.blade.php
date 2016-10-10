@@ -7,9 +7,9 @@
                         <a href="#"><img src="/img/logo/footer-logo.png" alt=""></a>
                     </div>
                     <div class="footer-info">
-                        <span><i class="fa fa-map-marker"></i>1st Floor New World Tower Miami</span>
-                        <span><i class="fa fa-envelope"></i>admin@power-boosts.com</span>
-                        <span><i class="fa fa-phone"></i>(801) 2345 - 67892324234234</span>
+                        <span><i class="fa fa-map-marker"></i>Ul. Jerzmanowskiego 37, Kraków</span>
+                        <span><i class="fa fa-envelope"></i>biuro@agaja.pl</span>
+                        <span><i class="fa fa-phone"></i>+48 12 1234567</span>
                     </div>
                 </div>
             </div>

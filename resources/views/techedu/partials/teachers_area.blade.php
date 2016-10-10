@@ -5,8 +5,8 @@
             <div class="col-md-12">
                 <div class="section-title-wrapper">
                     <div class="section-title">
-                        <h3>Our Teachers</h3>
-                        <p>We are glad to introduce our professional staff</p>
+                        <h3>Nasza załoga</h3>
+                        <p>Każdy z nich jest inny, ale każdy tak samo wyjątkowy</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                             </a>
                         </div>
                         <div class="teacher-column-carousel-text">
-                            <h4>Kailo</h4>
+                            <h4>Magda</h4>
                             <span>Professor, Harvard College</span>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                             <div class="social-links">
@@ -47,7 +47,7 @@
                             </a>
                         </div>
                         <div class="teacher-column-carousel-text">
-                            <h4>graves</h4>
+                            <h4>Ola</h4>
                             <span>Professor, Harvard College</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, has been the industry's standard dummy.</p>
                             <div class="social-links">
@@ -70,7 +70,7 @@
                             </a>
                         </div>
                         <div class="teacher-column-carousel-text">
-                            <h4>poppy</h4>
+                            <h4>Kinga</h4>
                             <span>Professor, Harvard College</span>
                             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
                             <div class="social-links">
@@ -93,7 +93,7 @@
                             </a>
                         </div>
                         <div class="teacher-column-carousel-text">
-                            <h4>maokai</h4>
+                            <h4>Agnieszka</h4>
                             <span>Professor, Harvard College</span>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some.</p>
                             <div class="social-links">
@@ -116,7 +116,7 @@
                             </a>
                         </div>
                         <div class="teacher-column-carousel-text">
-                            <h4>graves</h4>
+                            <h4>Renia</h4>
                             <span>Professor, Harvard College</span>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, has been the industry's standard dummy.</p>
                             <div class="social-links">

@@ -44,12 +44,12 @@
         <div class="container">
             <div class="logo-menu-bg">
                 <div class="row">
-                    <div class="col-md-3 col-sm-12">
+                    <div class="col-md-2 col-sm-12">
                         <div class="logo">
                             <a href="/"><img src="/img/logo/logo-agaja.png" alt="Agaja"></a>
                         </div>
                     </div>
-                    <div class="col-md-9 hidden-sm hidden-xs">
+                    <div class="col-md-10 hidden-sm hidden-xs">
                         <div class="mainmenu-area">
                             <div class="mainmenu">
                                 <nav>
@@ -58,16 +58,17 @@
                                             <a href="/">{{trans('page.menu.home')}}</a>
                                          </li>
                                         <li><a href="/about">{{trans('page.menu.about')}}</a></li>
-                                        <li><a href="/">{{trans('page.menu.class')}}<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="/offer">{{trans('page.menu.offer')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="{{route('class_grid')}}">Classes Grid</a></li>
                                                 <li><a href="{{route('class_list')}}">Classes List</a></li>
                                                 <li><a href="/class/details">Class Details</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/teacher">Teachers<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="/teacher">{{trans('page.menu.stuff')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="/teacher/info">Teachers Info</a></li>
+                                                <li><a href="/teacher/1">Agnieszka</a></li>
+                                                <li><a href="/teacher/2">Ola</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="/gallery">Gallery</a></li>
