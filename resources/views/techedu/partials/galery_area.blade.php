@@ -5,8 +5,8 @@
             <div class="col-md-12">
                 <div class="section-title-wrapper">
                     <div class="section-title">
-                        <h3>Our Gallery</h3>
-                        <p>Discove Our Kindergarten Photo Gallery</p>
+                        <h3>{{trans('dashboard.galleries')}}</h3>
+                        <p>{{trans('dashboard.galleries_desc')}}</p>
                     </div>
                 </div>
             </div>
