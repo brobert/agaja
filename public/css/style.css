@@ -2186,6 +2186,9 @@ header.header-four, header.header-five {
     margin-bottom: 3px;
     overflow: hidden;
 }
+.skill-bar-item.centered {
+    text-align: center;
+}
 .progress-bar {
     border-radius: 6px;
     box-shadow: none;

@@ -16,7 +16,7 @@
                 <div class="about-text-container">
                     <p class="lead">Gabinet Terapeutyczny dla Dzieci i Młodzieży “AGAJA” istnieje już od września 2008 roku. Jest więc jednym z najstarszych gabinetów integracji sensorycznej w Krakowie. </p>
                     <p>Początki Agai to
-                        <img class="pull-left" src="http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?resize=183%2C183" alt="AgajaLogoKolor" srcset="http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?resize=300%2C300 300w, http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?resize=150%2C150 150w, http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?resize=1024%2C1024 1024w, http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?resize=624%2C624 624w, http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?resize=101%2C101 101w, http://i2.wp.com/www.agaja.pl/wp-content/uploads/2014/09/AgajaLogoKolor.jpg?w=1181 1181w" sizes="(max-width: 183px) 100vw, 183px" width="183" height="183">
+                        <img class="pull-left" src="/img/logo/logo-agaja-duze.jpg" alt="AgajaLogoKolor"  sizes="(max-width: 200px) 100vw, 200px" width="200" height="200">
                         małe, przytulne Integracyjne Przedszkole Samorządowe nr 28 w Krakowie, w którym to cała historia się zaczęła.
                         Wkrótce potem gabinet przeniósł się do podziemi kościoła w Prokocimiu. Początki były naprawdę skromne.
                         Zaczynaliśmy od jednego terapeuty, mającego do dyspozycji jedną huśtawkę i&nbsp;jedno biurko.
