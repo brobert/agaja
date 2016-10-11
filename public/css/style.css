@@ -837,6 +837,35 @@ ul.register li:hover .register-form, ul.login li:hover .login-form {
 .class-schedule > span:nth-child(2) {
     width: 48%;
 }
+
+
+/*****/
+.therapy-des a:hover {color: #1bb4b9;}
+.single-therapy-text {
+    border-bottom: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-radius: 0 0 4px 4px;
+    border-right: 1px solid #f0f0f0;
+}
+.therapy-des {padding: 25px 15px 10px;}
+.therapy-des > p {word-spacing: 3px;}
+.therapy-des > h4 {margin-bottom: 10px;}
+.therapy-schedule {
+    border-top: 1px solid #f0f0f0;
+    height: 49px;
+}
+.therapy-schedule span {
+    display: block;
+    float: left;
+    line-height: 49px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.therapy-schedule > span:first-child {
+
+    width: 92%;
+}
+/***************************/
 span.arrow{
     float: right;
     width: 8%;

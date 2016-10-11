@@ -40,7 +40,7 @@
         </div>
     </div>
     <!--Logo Mainmenu Start-->
-    <div class="header-logo-menu">
+    <div class="header-logo-menu" topSpacing="20">
         <div class="container">
             <div class="logo-menu-bg">
                 <div class="row">
@@ -58,11 +58,11 @@
                                             <a href="/">{{trans('page.menu.home')}}</a>
                                          </li>
                                         <li><a href="/about">{{trans('page.menu.about')}}</a></li>
-                                        <li><a href="/offer">{{trans('page.menu.offer')}}<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="{{route('therapy_list')}}">{{trans('page.menu.therapy')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="{{route('class_grid')}}">Classes Grid</a></li>
-                                                <li><a href="{{route('class_list')}}">Classes List</a></li>
-                                                <li><a href="/class/details">Class Details</a></li>
+                                                <li><a href="{{route('therapy_show', ['id' => 1])}}">Terapia 1</a></li>
+                                                <li><a href="{{route('therapy_show', ['id' => 2])}}">Terapia 2</a></li>
+                                                <li><a href="{{route('therapy_show', ['id' => 3])}}">Terapia 3</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="/teacher">{{trans('page.menu.stuff')}}<i class="fa fa-angle-down"></i></a>

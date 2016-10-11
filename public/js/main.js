@@ -1,9 +1,14 @@
 (function ($) {
  "use strict";
-    
+
 /*-----------------------------
-	Menu Stick
+    Menu Stick
 ---------------------------------*/
+
+    var $sticked = $(".sticked");
+    
+    $sticked.sticky({topSpacing: $sticked.attr('topSpacing')!== undefined? $sticked.attr('topSpacing'): 0 });
+    
     if ($(".sticker")[0]){
         $('.sticker');
         $(window).scroll(function(){

@@ -3,61 +3,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="footer-info-container text-center section-padding">
-                    <div class="footer-logo">
-                        <a href="#"><img src="/img/logo/footer-logo.png" alt=""></a>
-                    </div>
                     <div class="footer-info">
                         <span><i class="fa fa-map-marker"></i>Ul. Jerzmanowskiego 37, Kraków</span>
                         <span><i class="fa fa-envelope"></i>biuro@agaja.pl</span>
                         <span><i class="fa fa-phone"></i>+48 12 1234567</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-widget-container section-padding">
-            <div class="row">
-                <div class="col-md-2 col-sm-3">
-                    <div class="single-footer-widget">
-                        <h4>Our School</h4>
-                        <ul class="footer-widget-list">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">Become a Teacher</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 hidden-sm">
-                    <div class="single-footer-widget">
-                        <h4>Links</h4>
-                        <ul class="footer-widget-list">
-                            <li><a href="#">Courses</a></li>
-                            <li><a href="#">Events</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">FAQs</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-3">
-                    <div class="single-footer-widget">
-                        <h4>Support</h4>
-                        <ul class="footer-widget-list">
-                            <li><a href="#">Documentation</a></li>
-                            <li><a href="#">Forums</a></li>
-                            <li><a href="#">Language Packs</a></li>
-                            <li><a href="#">Release Status</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="subscribe-container">
-                        <p>Subscribe now and receive weekly newsletter with educational materials, new courses, interesting posts, popular books and much more!</p>
-                        <form action="#">
-                            <div class="subscribe-form">
-                                <input type="email" name="email" placeholder="Your email here">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>

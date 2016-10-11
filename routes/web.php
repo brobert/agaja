@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () { return view('techedu/pages/index'); });
+Route::get( '/', 'HomeController@index')->name('home');
 
 Route::get('/about', function () { return view('techedu/pages/about'); });
 
@@ -26,3 +26,7 @@ Route::group( ['prefix' => 'teacher'], function() {
     Route::get( '/{id}', 'TeacherController@show')->name('teacher_show');
 });
 
+    Route::group( ['prefix' => 'therapy'], function() {
+        Route::get( '/', 'TherapyController@index')->name('therapy_list');
+        Route::get( '/{id}', 'TherapyController@show')->name('therapy_show');
+    });

@@ -12,11 +12,11 @@
     .header-login-register.tab-style-hover {margin-left: 28px;}
     .header-five .mainmenu ul#nav li {margin-right: 35px;}
     .carousel-style-one.owl-theme .owl-controls .owl-buttons div, .testimonial-carousel.carousel-style-one.owl-theme .owl-controls .owl-buttons div, .teacher-carousel.carousel-style-one.owl-theme .owl-controls .owl-buttons div, .testimonial-carousel.carousel-style-one.owl-theme .owl-controls .owl-buttons div {
-        left: -58px;
+        left: 20px;
     }
     .carousel-style-one.owl-theme .owl-controls .owl-buttons div.owl-next, .testimonial-carousel.carousel-style-one.owl-theme .owl-controls .owl-buttons div.owl-next, .teacher-carousel.carousel-style-one.owl-theme .owl-controls .owl-buttons div.owl-next, .testimonial-carousel.carousel-style-one.owl-theme .owl-controls .owl-buttons div.owl-next {
         left: auto;
-        right: -58px;
+        right: 35px;
     }
     .service-area .col-md-4:first-child .single-service-text {padding-right: 122px;}
     .service-area .col-md-4:last-child .single-service-text {padding-left: 122px;}

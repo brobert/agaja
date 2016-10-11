@@ -31,6 +31,7 @@ class TeacherRepository extends ResourceRepository {
             'skills' => 'Rehabilitant w USD Kraków-Prokocim',
             'degree' => 'Magister rehabilitacji, AWF Kraków',
             'courses' => 'Rehabilitacja dzieicęca',
+            'social_media' => false,
         ];
         return (object) $data;
     }

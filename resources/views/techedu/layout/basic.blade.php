@@ -92,6 +92,9 @@
 		============================================ -->
         <script src="/js/jquery.mixitup.js"></script>
 
+		<!-- Sticky JS
+		============================================ -->
+        <script src="/js/jquery.sticky.js"></script>
 		<!-- Venubox JS
 		============================================ -->
         <script src="/js/venobox.min.js"></script>

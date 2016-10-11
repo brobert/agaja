@@ -13,6 +13,7 @@
                 </div>
                 <div class="row">
                     <div class="class-carousel carousel-style-one">
+                        @each('techedu/pages/class/detail_panel', $therapies, 'therapy')
                         <div class="col-md-4">
                             <div class="single-class">
                                 <div class="single-class-image">

@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-use App\Http\Repositories\TeacherRepository;
+use App\Http\Repositories\TherapyRepository;
 
-class TeacherController extends ResourceController
+class TherapyController extends Controller
 {
 
-    public function __construct( TeacherRepository $repository )
+    public function __construct( TherapyRepository $repository )
     {
         $this->repository = $repository;
     }
@@ -22,11 +22,7 @@ class TeacherController extends ResourceController
      */
     public function index()
     {
-        $data = [
-            'teachers' => $this->repository->getAll(),
-        ];
-
-        return view('techedu/pages/teacher/index', $data);
+        //
     }
 
     /**
@@ -59,10 +55,10 @@ class TeacherController extends ResourceController
     public function show($id)
     {
         $data = [
-            'teacher' => $this->repository->getById($id),
+            'therapy' => $this->repository->getById($id),
         ];
 
-        return view('techedu/pages/teacher/show', $data);
+        return view('techedu/pages/therapy/show', $data);
     }
 
     /**
