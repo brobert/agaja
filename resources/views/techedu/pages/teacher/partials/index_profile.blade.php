@@ -2,7 +2,7 @@
     <div class="single-teachers-column text-center">
         <div class="teachers-image-column">
             <a href="{{route('teacher_show', ['id' => $teacher->id ])}}">
-                <img src="img/teacher/{{ $teacher->photo or 1}}.jpg" alt="">
+                <img src="img/teacher/{{ $teacher->photo}}.jpg" alt="">
                 <span class="image-hover">
                     <span><i class="fa fa-edit"></i>View Profile</span>
                 </span>

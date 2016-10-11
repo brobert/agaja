@@ -28,6 +28,9 @@ class TeacherRepository extends ResourceRepository {
             'name'  => 'Lorem Ipsum' . $teacherId,
             'photo' => $teacherId,
             'desc'  => 'Curabitur id mi eget arcu volutpat fermentum. Nulla facilisi. Praesent bibendum nibh quis purus tincidunt scelerisque. Vivamus tristique gravida est in sodales. Maecenas eget mauris',
+            'skills' => 'Rehabilitant w USD Kraków-Prokocim',
+            'degree' => 'Magister rehabilitacji, AWF Kraków',
+            'courses' => 'Rehabilitacja dzieicęca',
         ];
         return (object) $data;
     }

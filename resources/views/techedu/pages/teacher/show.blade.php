@@ -49,11 +49,9 @@
                         <h3>About</h3>
                     </div>
                     <div class="teacher-info-text">
-                        <span><i class="fa fa-graduation-cap"></i>Degree: Spanish Literature Master</span>
-                        <span><i class="fa fa-star"></i>Experience: 5 Years in Preschool Education</span>
-                        <span><i class="fa fa-heart"></i>Hobbies: Music, Dancing and Family</span>
-                        <span><i class="fa fa-edit"></i>My Courses: Paint Kiddie, Mini Kiddie</span>
-                        <span><i class="fa fa-bookmark"></i>Projects: Map Creation</span>
+                        <span><i class="fa fa-graduation-cap"></i>{{trans('teacher.degree')}}: {{ $teacher->degree }}</span>
+                        <span><i class="fa fa-star"></i>{{trans('teacher.experience')}}: {{ $teacher->skills }}</span>
+                        <span><i class="fa fa-edit"></i>{{trans('teacher.courses')}}: {{ $teacher->courses }}</span>
                     </div>
                     <p>He works in partnership with clients, advising them how to use information technology in order to meet their business objectives or overcome problems. Lorem ipsum dolor sit amet, consectetur adipiscing elites. Nulla convallis egestas rhoncusa. Donec lorem facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Proin vestibulum leo eget erat congue interdum.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elites. Nulla convallis egestas rhoncusa. Donec lorem facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Proin vestibulum leo eget erat congue interdum. Nulla convallis egestas rhoncusa. Donec lorem facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Proin vestibulum leo eget erat congue interdum.</p>
