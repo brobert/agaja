@@ -40,7 +40,7 @@
         </div>
     </div>
     <!--Logo Mainmenu Start-->
-    <div class="header-logo-menu sticker">
+    <div class="header-logo-menu">
         <div class="container">
             <div class="logo-menu-bg">
                 <div class="row">
