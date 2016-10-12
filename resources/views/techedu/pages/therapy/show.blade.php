@@ -8,11 +8,12 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="breadcrumb-text">
-                    <h1 class="text-center">Therapy</h1>
+                    <h1 class="text-center">{{trans('therapy.list.title')}}</h1>
                     <div class="breadcrumb-bar">
                         <ul class="breadcrumb">
                             <li><a href="{{route('home')}}">{{trans('page.menu.home')}}</a></li>
-                            <li>Therapy Details</li>
+                            <li><a href="{{route('therapy')}}">{{trans('page.menu.therapy')}}</a>
+                            <li>{{$therapy->name}}</li>
                         </ul>
                     </div>
                 </div>

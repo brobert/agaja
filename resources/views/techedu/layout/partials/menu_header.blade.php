@@ -58,7 +58,7 @@
                                             <a href="/">{{trans('page.menu.home')}}</a>
                                          </li>
                                         <li><a href="/about">{{trans('page.menu.about')}}</a></li>
-                                        <li><a href="{{route('therapy_list')}}">{{trans('page.menu.therapy')}}<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="{{route('therapy')}}">{{trans('page.menu.therapy')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="{{route('therapy_show', ['id' => 1])}}">Terapia 1</a></li>
                                                 <li><a href="{{route('therapy_show', ['id' => 2])}}">Terapia 2</a></li>
@@ -71,6 +71,7 @@
                                                 <li><a href="/teacher/2">Ola</a></li>
                                             </ul>
                                         </li>
+{{--
                                         <li><a href="/gallery">Gallery</a></li>
                                         <li><a href="/">Pages <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
@@ -91,6 +92,7 @@
                                                 <li><a href="/blog/details">Blog Details</a></li>
                                             </ul>
                                         </li>
+--}}
                                         <li><a href="{{route('contact')}}">Contact</a></li>
                                     </ul>
                                 </nav>

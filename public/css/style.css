@@ -849,7 +849,7 @@ ul.register li:hover .register-form, ul.login li:hover .login-form {
 }
 .therapy-des {padding: 25px 15px 10px;}
 .therapy-des > p {word-spacing: 3px;}
-.therapy-des > h4 {margin-bottom: 10px;}
+.therapy-des > h4 {margin-bottom: 10px; height: 2.5em; }
 .therapy-schedule {
     border-top: 1px solid #f0f0f0;
     height: 49px;
@@ -2742,7 +2742,7 @@ header.header-four, header.header-five {
     line-height: 34px;
     outline: medium none;
     padding: 0 19px;
-    width: 100%;
+    width: 90%;
 }
 .search-container .submit {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
@@ -2756,7 +2756,7 @@ header.header-four, header.header-five {
     text-align: center;
 }
 .search-container .submit:hover {color: #1BB4B9;}
-.class-grid-area .single-class {margin-bottom: 30px;}
+.therapy-grid-area .single-therapy {margin-bottom: 30px;}
 .pagination-content {overflow: hidden;}
 .pagination {
     border-radius: 0;

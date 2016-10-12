@@ -646,15 +646,29 @@ class TherapyRepository extends ResourceRepository {
         return $therapy;
     }
 
-    public function getAll() {
+    public function getAll( $request ) {
 
         $data = [];
         foreach( array_keys( $this->data ) as $id) {
             $data[] = $this->getById( $id );
         }
 
+        if ( $request->has('_search') ) {
+            $tmp_data = [];
+
+            foreach( $data as $item ) {
+                if ( $this->_searchItem($request->input('_search'), $item) ) {
+                    $tmp_data[] = $item;
+                }
+            }
+            $data = $tmp_data;
+        }
         return $data;
 
         return $this->model->get();
+    }
+
+    private function _searchItem($_search, $item) {
+        return preg_match('/' . $_search .'/i',$item->name);
     }
 }

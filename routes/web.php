@@ -22,11 +22,16 @@ Route::get('/class/detail', function () { return view('techedu/pages/class/detai
 Route::get('/contact', function () { return view('techedu/pages/contact'); })->name('contact');
 
 Route::group( ['prefix' => 'teacher'], function() {
-    Route::get( '/', 'TeacherController@index')->name('teacher_list');
+    Route::get( '/', 'TeacherController@index')->name('teacher');
     Route::get( '/{id}', 'TeacherController@show')->name('teacher_show');
 });
 
-    Route::group( ['prefix' => 'therapy'], function() {
-        Route::get( '/', 'TherapyController@index')->name('therapy_list');
-        Route::get( '/{id}', 'TherapyController@show')->name('therapy_show');
+Route::group( ['prefix' => 'therapy'], function() {
+    Route::get( '/', 'TherapyController@index')->name('therapy');
+    Route::get( '/{id}', 'TherapyController@show')->name('therapy_show');
+});
+
+    Route::group( ['prefix' => 'events'], function() {
+        Route::get( '/', 'EventController@index')->name('event');
+        Route::get( '/{id}', 'EventController@show')->name('therapy_show');
     });

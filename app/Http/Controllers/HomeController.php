@@ -8,22 +8,22 @@ use App\Http\Requests;
 
 use App\Http\Repositories\TherapyRepository;
 
-class HomeController extends Controller
+class HomeController extends AgajaController
 {
     // handler for repositories
     private $res = [];
 
     public function __construct( TherapyRepository $resTherapy )
     {
+        parent::__construct( null );
+
         $this->res['therapy'] = $resTherapy;
     }
 
-    public function index()
+    public function indexData( Request $request )
     {
-        $data = [
-            'therapies' => $this->res['therapy']->getAll(),
-        ];
-
-        return view('techedu/pages/index', $data);
+        $this->setData([
+            'therapies' => $this->res['therapy']->getAll( $request ),
+        ]);
     }
 }
