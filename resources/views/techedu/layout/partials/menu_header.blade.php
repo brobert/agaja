@@ -71,28 +71,6 @@
                                                 <li><a href="/teacher/2">Ola</a></li>
                                             </ul>
                                         </li>
-{{--
-                                        <li><a href="/gallery">Gallery</a></li>
-                                        <li><a href="/">Pages <i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="/about">{{trans('page.menu.about')}}</a></li>
-                                                <li><a href="/blog">Blog Page</a></li>
-                                                <li><a href="/blog/details">Blog Details Page</a></li>
-                                                <li><a href="{{route('class_grid')}}">Class Grid</a></li>
-                                                <li><a href="{{route('class_list')}}">Class List</a></li>
-                                                <li><a href="/class/details">Class Details</a></li>
-                                                <li><a href="/teacher">Teachers Page</a></li>
-                                                <li><a href="/teacher/info">Teachers Info</a></li>
-                                                <li><a href="/gallery">Gallery</a></li>
-                                                <li><a href="/contact">Contact</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="/blog">Blog<i class="fa fa-angle-down"></i></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="/blog/details">Blog Details</a></li>
-                                            </ul>
-                                        </li>
---}}
                                         <li><a href="{{route('contact')}}">Contact</a></li>
                                     </ul>
                                 </nav>

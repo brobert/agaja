@@ -35,7 +35,7 @@ class TherapyController extends AgajaController
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    protected function showData($id)
+    protected function showData($id, Request $request)
     {
         $this->setData( 'therapy', $this->repository->getById( $id ) );
     }

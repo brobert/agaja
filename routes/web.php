@@ -33,5 +33,5 @@ Route::group( ['prefix' => 'therapy'], function() {
 
     Route::group( ['prefix' => 'events'], function() {
         Route::get( '/', 'EventController@index')->name('event');
-        Route::get( '/{id}', 'EventController@show')->name('therapy_show');
+        Route::get( '/{id}', 'EventController@show')->name('event_show');
     });

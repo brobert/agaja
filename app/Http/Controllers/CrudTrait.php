@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 
 trait CrudTrait {
 
@@ -100,7 +101,7 @@ trait CrudTrait {
      * Retrieve data required to displaing index page
      * @param Request $request
      */
-    public function indexData( Request $request )
+    protected function indexData( Request $request )
     {
         return;
     }
@@ -112,7 +113,7 @@ trait CrudTrait {
      * Retrieve data required to displaing detail page
      * @param Request $request
      */
-    public function showData( $id, Request $request )
+    protected function showData( $id, Request $request )
     {
         return;
     }
@@ -124,7 +125,7 @@ trait CrudTrait {
      * Retrieve data required to displaing edit form page
      * @param Request $request
      */
-    public function editData ( $id, Request $request )
+    protected function editData ( $id, Request $request )
     {
         return;
     }

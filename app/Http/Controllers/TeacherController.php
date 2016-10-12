@@ -21,7 +21,7 @@ class TeacherController extends AgajaController {
      *
      * @return \Illuminate\Http\Response
      */
-    public function indexData( Request $request )
+    protected function indexData( Request $request )
     {
         $this->setData([
             'teachers' => $this->repository->getAll(),
@@ -35,7 +35,7 @@ class TeacherController extends AgajaController {
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function showData( $id, Request $request )
+    protected function showData( $id, Request $request )
     {
         $this->setData('teacher', $this->repository->getById($id) );
     }
