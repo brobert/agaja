@@ -8,9 +8,9 @@ use App\Http\Requests;
 
 class AgajaController extends Controller
 {
-
-    use ResponseTrait;
-    use CrudTrait;
+    use ResponseTrait,      // respons options
+        CrudTrait           // CRUD helpers
+    ;
 
     /**
      * handler for respons data ( for view or JSON )
