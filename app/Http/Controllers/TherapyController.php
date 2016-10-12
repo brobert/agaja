@@ -22,7 +22,7 @@ class TherapyController extends Controller
      */
     public function index()
     {
-        //
+        return view('techedu/pages/therapy/index');
     }
 
     /**
