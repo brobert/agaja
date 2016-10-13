@@ -55,7 +55,7 @@
                                 <nav>
                                     <ul id="nav">
                                         <li class="current">
-                                            <a href="/">{{trans('page.menu.home')}}</a>
+                                            <a href="{{route('home')}}">{{trans('page.menu.home')}}</a>
                                          </li>
                                         <li><a href="/about">{{trans('page.menu.about')}}</a></li>
                                         <li><a href="{{route('therapy')}}">{{trans('page.menu.therapy')}}<i class="fa fa-angle-down"></i></a>
@@ -65,10 +65,10 @@
                                                 <li><a href="{{route('therapy_show', ['id' => 3])}}">Terapia 3</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/teacher">{{trans('page.menu.stuff')}}<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="/teacher">{{trans('page.menu.teachers')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="/teacher/1">Agnieszka</a></li>
-                                                <li><a href="/teacher/2">Ola</a></li>
+                                                <li><a href="{{route('teacher_show', ['id' => 6])}}">Agnieszka</a></li>
+                                                <li><a href="{{route('teacher_show', ['id' => 7])}}">Ola</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{route('contact')}}">Contact</a></li>
@@ -82,49 +82,5 @@
         </div>
     </div>
     <!--End of Logo Mainmenu-->
-    <!-- Mobile Menu Area start -->
-    <div class="mobile-menu-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="mobile-menu">
-                        <nav id="dropdown">
-                            <ul>
-                                <li><a href="/index">HOME</a>
-                                    <ul>
-                                        <li><a href="/index-2">Homepage Version 2</a></li>
-                                        <li><a href="/index-3">Homepage Version 3</a></li>
-                                        <li><a href="/index-4">Homepage Version 4</a></li>
-                                        <li><a href="/index-5">Homepage Version 5</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/about">About Us</a></li>
-                                <li><a href="/class-grid">Classes</a>
-                                    <ul>
-                                        <li><a href="/class-grid">Classes Grid</a></li>
-                                        <li><a href="/class-list">Classes List</a></li>
-                                        <li><a href="/class-details">Class Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/teacher">Teachers Page</a>
-                                    <ul>
-                                        <li><a href="/teacher-info">Teachers Info</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/gallery">Gallery</a></li>
-                                <li><a href="/blog">Blog Page</a>
-                                    <ul>
-                                        <li><a href="/blog-details">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="/contact">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Mobile Menu Area end -->
 </header>
 <!--End of Header Area-->

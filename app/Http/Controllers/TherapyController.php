@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
 use App\Http\Repositories\TherapyRepository;
 
 class TherapyController extends AgajaController
@@ -14,6 +13,7 @@ class TherapyController extends AgajaController
     public function __construct( TherapyRepository $repository )
     {
         parent::__construct($repository);
+        $this->setData('banner_title', 'therapy');
     }
 
     /**
@@ -23,10 +23,8 @@ class TherapyController extends AgajaController
      */
     protected function indexData(Request $request)
     {
-        $this->setData([
-            'therapies' => $this->repository->getAll($request),
-            '_search' => $request->input('_search', ''),
-        ]);
+        $this->setData( 'therapies', $this->repository->getAll($request) );
+        $this->setData( '_search', $request->input('_search', ''));
     }
 
     /**

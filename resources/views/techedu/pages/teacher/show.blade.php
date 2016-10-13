@@ -2,25 +2,8 @@
 
 @section('content')
 
-<!--Breadcrumb Banner Area Start-->
-<div class="breadcrumb-banner-area teachers">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="breadcrumb-text">
-                    <h1 class="text-center">Teachers</h1>
-                    <div class="breadcrumb-bar">
-                        <ul class="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li>Teacher Details</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--End of Breadcrumb Banner Area-->
+@include( 'techedu/pages/partials/banner_breadcrumb' )
+
 <!--Teacher Details Area Start-->
 <div class="teacher-details-area section-padding">
     <div class="container">

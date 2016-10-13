@@ -1,5 +1,5 @@
 <!--About Area Start-->
-<div class="about-area section-padding-bottom">
+<div class="about-area section-padding">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

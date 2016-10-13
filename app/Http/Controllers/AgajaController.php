@@ -19,6 +19,7 @@ class AgajaController extends Controller
     private $data = [];
 
     private $view = '';
+
     /**
      *
      */
@@ -31,13 +32,30 @@ class AgajaController extends Controller
      * @method __construct
      * AgajaController
      */
-    public function __construct( $repository )
+    public function __construct( $repository = null )
     {
         $this->repository = $repository;
-//         parent::__construct();
+
+        $this->setData('banner_title', '');
+        $this->addCrumb( trans ('page.menu.home'), route('home') );
+
+        if ( $this->base ) {
+            $this->addCrumb( trans ('page.menu.' . $this->base ), route( $this->base ) );
+        }
     }
 
+    protected function addCrumb( $text, $url = null )
+    {
+        if ( !isset( $this->data['bread_crumbs']))
+        {
+            $this->data['bread_crumbs'] = [];
+        }
 
+        $this->data['bread_crumbs'][] = [
+            'url'   => $url,
+            'text'  => $text,
+        ];
+    }
 
 
 }

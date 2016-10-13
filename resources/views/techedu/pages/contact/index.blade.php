@@ -2,6 +2,8 @@
 
 @section('content')
 
+@include('techedu/pages/partials/banner_breadcrumb' )
+
 <!--Google Map Area Start -->
 <div class="google-map-area">
     <!--  Map Section -->

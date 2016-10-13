@@ -3,24 +3,7 @@
 @section('content')
 
 <!--Breadcrumb Banner Area Start-->
-<div class="breadcrumb-banner-area therapy">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="breadcrumb-text">
-                    <h1 class="text-center">{{trans('therapy.list.title')}}</h1>
-                    <div class="breadcrumb-bar">
-                        <ul class="breadcrumb">
-                            <li><a href="{{route('home')}}">{{trans('page.menu.home')}}</a></li>
-                            <li><a href="{{route('therapy')}}">{{trans('page.menu.therapy')}}</a>
-                            <li>{{$therapy->name}}</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+@include('techedu/pages/partials/banner_breadcrumb' )
 <!--End of Breadcrumb Banner Area-->
 
 
@@ -77,7 +60,7 @@
                                     <a href="{{route('teacher_show', [ 'id' => $therapist->id ])}}"><img src="/img/teacher/{{$therapist->id}}.jpg" alt=""></a>
                                 </div>
                                 <div class="widget-infos">
-                                    <h4><a href="#">{{ $therapist->name}}</a></h4>
+                                    <h4><a href="{{route('teacher_show', [ 'id' => $therapist->id ])}}">{{ $therapist->name}}</a></h4>
                                     <p>Professor, Harvard College</p>
                                 </div>
                             </div>

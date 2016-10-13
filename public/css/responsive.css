@@ -26,7 +26,6 @@
     .container {width:970px}
     .logo a img {width: 100%;}
     .mainmenu-area {
-        float: right;
         padding: 19px 0 0;
     }
     .mainmenu ul#nav li {margin-right: 15px;}

@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Repositories\TeacherRepository;
 
-class TeacherController extends AgajaController {
-
+class TeacherController extends AgajaController 
+{
     protected $base = 'teacher';
 
     public function __construct( TeacherRepository $repository )
     {
         parent::__construct($repository);
-//         $this->repository = $repository;
+        $this->setData('banner_title', 'teachers');
     }
 
     /**
@@ -23,9 +23,7 @@ class TeacherController extends AgajaController {
      */
     protected function indexData( Request $request )
     {
-        $this->setData([
-            'teachers' => $this->repository->getAll(),
-        ]);
+        $this->setData('teachers', $this->repository->getAll());
     }
 
 
@@ -37,7 +35,11 @@ class TeacherController extends AgajaController {
      */
     protected function showData( $id, Request $request )
     {
-        $this->setData('teacher', $this->repository->getById($id) );
+        $teacher_data = $this->repository->getById($id);
+        $this->setData('teacher', $teacher_data );
+
+        // add breadcrumb
+        $this->addCrumb( $teacher_data->name );
     }
 
 

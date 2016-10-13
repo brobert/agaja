@@ -11,7 +11,7 @@
                             <h1 class="text-center">Classes</h1>
                             <div class="breadcrumb-bar">
                                 <ul class="breadcrumb">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="{{route('home')}}">{{ trans ('page.menu.home')}}</a></li>
                                     <li>Classes</li>
                                 </ul>
                             </div>
