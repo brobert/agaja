@@ -11,6 +11,6 @@ class AboutUsController extends AgajaController
     {
         parent::__construct();
 
-//         $this->setData('banner_title', 'about');
+        $this->setData('banner_title', 'about');
     }
 }

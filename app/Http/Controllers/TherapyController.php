@@ -35,6 +35,9 @@ class TherapyController extends AgajaController
      */
     protected function showData($id, Request $request)
     {
-        $this->setData( 'therapy', $this->repository->getById( $id ) );
+        $data = $this->repository->getById( $id );
+        $this->setData( 'therapy', $data );
+
+        $this->addCrumb($data->name, \route('therapy_show', ['id' => $id]));
     }
 }
