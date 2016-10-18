@@ -97,7 +97,7 @@ trait CrudTrait {
     /**
      *
      * @method indexData
-     * AgajaController
+     * AppController
      * Retrieve data required to displaing index page
      * @param Request $request
      */
@@ -109,7 +109,7 @@ trait CrudTrait {
     /**
      *
      * @method showData
-     * AgajaController
+     * AppController
      * Retrieve data required to displaing detail page
      * @param Request $request
      */
@@ -121,7 +121,7 @@ trait CrudTrait {
     /**
      *
      * @method editData
-     * AgajaController
+     * AppController
      * Retrieve data required to displaing edit form page
      * @param Request $request
      */

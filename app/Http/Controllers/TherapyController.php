@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Repositories\TherapyRepository;
 
-class TherapyController extends AgajaController
+class TherapyController extends AppController
 {
     protected $base = 'therapy';
 

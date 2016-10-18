@@ -3,6 +3,7 @@
 return [
     'menu' => [
         'home' => 'Start',
-        'about' => 'O nas',
+        'about' => 'Agaja',
+        'offer' => 'Oferta'
     ]
 ];

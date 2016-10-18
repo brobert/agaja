@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Repositories\TeacherRepository;
 
-class ContactController extends AgajaController {
+class ContactController extends AppController {
 
     protected $base = 'contact';
 

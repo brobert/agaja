@@ -18,7 +18,7 @@ trait ResponseTrait {
     /**
      *
      * @method setData
-     * AgajaController
+     * AppController
      * @param string|array $keyOrData
      * @param unknown $data
      */

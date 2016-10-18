@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 use App\Http\Repositories\TherapyRepository;
 
-class HomeController extends AgajaController
+class HomeController extends AppController
 {
     // handler for repositories
     private $res = [];

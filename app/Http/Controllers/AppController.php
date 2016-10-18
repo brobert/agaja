@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class AgajaController extends Controller
+class AppController extends Controller
 {
     use ResponseTrait,      // respons options
         CrudTrait           // CRUD helpers
@@ -30,7 +30,7 @@ class AgajaController extends Controller
     /**
      *
      * @method __construct
-     * AgajaController
+     * AppController
      */
     public function __construct( $repository = null )
     {

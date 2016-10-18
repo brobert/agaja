@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class EventController extends AgajaController
+class EventController extends AppController
 {
     //
 }

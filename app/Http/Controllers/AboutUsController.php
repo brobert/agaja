@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class AboutUsController extends AgajaController
+class AboutUsController extends AppController
 {
 
     protected $base = 'about';

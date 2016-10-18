@@ -15,6 +15,9 @@ Route::get( '/', 'HomeController@index')->name('home');
 Route::get( '/about', 'AboutUsController@index')->name('about');
 Route::get( '/contact', 'ContactController@index')->name('contact');
 
+Route::group( ['prefix' => 'agaja'], function() {
+    Route::get( '/', 'AgajaController@index')->name('agaja');
+});
 
 Route::group( ['prefix' => 'teacher'], function() {
     Route::get( '/', 'TeacherController@index')->name('teacher');
