@@ -65,7 +65,7 @@
                                                 <li><a href="{{route('therapy_show', ['id' => 3])}}">Terapia 3</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="/teacher">{{trans('page.menu.teachers')}}<i class="fa fa-angle-down"></i></a>
+                                        <li><a href="/teacher">{{trans('page.menu.teacher')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="{{route('teacher_show', ['id' => 6])}}">Agnieszka</a></li>
                                                 <li><a href="{{route('teacher_show', ['id' => 7])}}">Ola</a></li>

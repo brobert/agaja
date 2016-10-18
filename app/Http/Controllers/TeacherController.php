@@ -6,14 +6,14 @@ use Illuminate\Http\Request;
 
 use App\Http\Repositories\TeacherRepository;
 
-class TeacherController extends AppController 
+class TeacherController extends AppController
 {
     protected $base = 'teacher';
 
     public function __construct( TeacherRepository $repository )
     {
         parent::__construct($repository);
-        $this->setData('banner_title', 'teachers');
+        $this->setData('banner_title', 'teacher');
     }
 
     /**

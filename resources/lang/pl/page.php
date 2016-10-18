@@ -4,6 +4,8 @@ return [
     'menu' => [
         'home' => 'Start',
         'about' => 'Agaja',
-        'offer' => 'Oferta'
+        'offer' => 'Oferta',
+        'therapy' => 'Oferta',
+        'teacher' => 'Kadra',
     ]
 ];

@@ -117,6 +117,7 @@ a {-webkit-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;text-decora
 a:hover {
     color: #4c4c4c;
     text-decoration: none;
+    cursor: pointer;
 }
 a:active, a:hover, a:focus {outline: 0 none; text-decoration: none}
 ul{
@@ -2690,7 +2691,7 @@ header.header-four, header.header-five {
     margin-right: 24px;
     position: relative;
 }
-.breadcrumb > li:first-child:before {
+.breadcrumb > li:after {
     background: #1bb4b9 none repeat scroll 0 0;
     border-radius: 50%;
     content: "";
@@ -2701,7 +2702,9 @@ header.header-four, header.header-five {
     top: 8px;
     width: 6px;
 }
-.breadcrumb > li + li:before {display: none;}
+.breadcrumb > li:before {display: none;}
+.breadcrumb > li:last-child:after {display: none;}
+
 .class-menu {
     overflow: hidden;
     padding: 0 0 30px;
