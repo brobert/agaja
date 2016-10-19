@@ -2,3 +2,5 @@ vendor
 .env
 .project
 public_html
+/.settings/
+/.buildpath
