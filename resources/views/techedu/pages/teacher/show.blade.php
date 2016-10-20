@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="teacher-details-image">
-                    <img src="/img/teacher/{{$teacher->id}}.jpg" alt="">
+                    <img src="/img/teacher/{{$teacher->photo or '1.jpg'}}" alt="">
                     @if( $teacher->social_media )
                         <div class="social-links">
                             <a href="#"><i class="fa fa-facebook"></i></a>
@@ -21,10 +21,10 @@
                     @endif
                 </div>
                 <div class="teacher-details-info">
-                    <h4>{{$teacher->name}}</h4>
-                    <span>Professor, Harvard College</span>
+                    <h4>{{$teacher->name}} {{$teacher->surname}}</h4>
+                    <span>{{$teacher->education }}</span>
                     <div class="teacher-info-text">
-                        <span><i class="fa fa-envelope"></i>Email: admin@power-boosts.com</span>
+                        <span><i class="fa fa-envelope"></i>Email: {{$teacher->email}}</span>
                     </div>
                 </div>
             </div>
@@ -38,8 +38,7 @@
                         <span><i class="fa fa-star"></i>{{trans('teacher.experience')}}: {{ $teacher->skills }}</span>
                         <span><i class="fa fa-edit"></i>{{trans('teacher.courses')}}: {{ $teacher->courses }}</span>
                     </div>
-                    <p>He works in partnership with clients, advising them how to use information technology in order to meet their business objectives or overcome problems. Lorem ipsum dolor sit amet, consectetur adipiscing elites. Nulla convallis egestas rhoncusa. Donec lorem facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Proin vestibulum leo eget erat congue interdum.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elites. Nulla convallis egestas rhoncusa. Donec lorem facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Proin vestibulum leo eget erat congue interdum. Nulla convallis egestas rhoncusa. Donec lorem facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam Proin vestibulum leo eget erat congue interdum.</p>
+                    <p>{{$teacher->description}}</p>
                 </div>
             </div>
         </div>

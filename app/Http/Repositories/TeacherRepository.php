@@ -23,6 +23,9 @@ class TeacherRepository extends ResourceRepository {
      */
     public function getById( $teacherId ) {
         // temporary mock
+
+        return $this->model->find( $teacherId );
+
         $data = [
             'id'    => (int) $teacherId,
             'name'  => 'Lorem Ipsum' . $teacherId,
@@ -38,12 +41,12 @@ class TeacherRepository extends ResourceRepository {
 
     public function getAll() {
 
-        $data = [];
-        for ($i = 6; $i <= 11; $i++ ) {
-            $data[] = $this->getById( $i );
-        }
+//         $data = [];
+//         for ($i = 6; $i <= 11; $i++ ) {
+//             $data[] = $this->getById( $i );
+//         }
 
-        return $data;
+//         return $data;
 
         return $this->model->get();
     }
