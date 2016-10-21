@@ -3233,6 +3233,29 @@ textarea {
     line-height: 13px;
     margin-bottom: 16px;
 }
+
+.teacher-about-info .teacher-info-text > span > * {
+    vertical-align: top;
+}
+
+.teacher-about-info .teacher-info-text > span > .about-label {
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    padding-left: 0px;
+}
+
+.teacher-about-info .teacher-info-text > span ul {
+    margin-left: 2em
+}
+    
+.teacher-about-info .teacher-info-text > span ul > li {
+    line-height: 13px;
+    font-size: 13px;
+}
+.teacher-about-info .teacher-info-text > span ul > li > i {
+    color: #f5b120
+}
+
 .teacher-about-info .teacher-info-text > span:last-child {margin-bottom: 0}
 .teacher-about-info .teacher-info-text span i {width: 23px;}
 .teacher-about-info > p {margin-bottom: 12px;}

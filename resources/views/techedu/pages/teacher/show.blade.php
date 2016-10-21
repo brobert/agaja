@@ -22,9 +22,12 @@
                 </div>
                 <div class="teacher-details-info">
                     <h4>{{$teacher->name}} {{$teacher->surname}}</h4>
-                    <span>{{$teacher->education }}</span>
+                    <span>{{$teacher->position }}</span>
                     <div class="teacher-info-text">
                         <span><i class="fa fa-envelope"></i>Email: {{$teacher->email}}</span>
+                    </div>
+                    <div class="teacher-about-info">
+
                     </div>
                 </div>
             </div>
@@ -33,11 +36,20 @@
                     <div class="single-title">
                         <h3>About</h3>
                     </div>
-                    <div class="teacher-info-text">
-                        <span><i class="fa fa-graduation-cap"></i>{{trans('teacher.degree')}}: {{ $teacher->degree }}</span>
-                        <span><i class="fa fa-star"></i>{{trans('teacher.experience')}}: {{ $teacher->skills }}</span>
-                        <span><i class="fa fa-edit"></i>{{trans('teacher.courses')}}: {{ $teacher->courses }}</span>
-                    </div>
+                        <div class="teacher-info-text">
+{{--                            <span>
+                                <i class="fa fa-graduation-cap"></i>
+                                <span class="fa about-label">{{trans('teacher.degree')}}: </span>
+                                {{ $teacher->education }}
+                            </span>
+--}}
+                            @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.degree', 'items' => $teacher->education])
+
+                            @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.skills', 'items' => $teacher->skills])
+
+                            @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.courses', 'items' => $teacher->courses])
+
+                        </div>
                     <p>{{$teacher->description}}</p>
                 </div>
             </div>

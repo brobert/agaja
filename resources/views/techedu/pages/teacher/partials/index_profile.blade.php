@@ -9,8 +9,12 @@
             </a>
         </div>
         <div class="teacher-column-carousel-text">
-            <h4>{{ $teacher->name}} {{ $teacher->surname}}</h4>
-            <span>{{ $teacher->education }}</span>
+            <h4>
+                <a href="{{route('teacher_show', ['id' => $teacher->id ])}}">
+                    {{ $teacher->name}} {{ $teacher->surname}}
+                </a>
+            </h4>
+            <span>{{ $teacher->position }}</span>
             <p>{{ str_limit( $teacher->description, 150 )}}</p>
             <div class="social-links">
                 <a href="#"><i class="fa fa-facebook"></i></a>
