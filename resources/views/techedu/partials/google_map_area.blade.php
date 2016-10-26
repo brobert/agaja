@@ -6,7 +6,7 @@
 </div>
 
 @push('scripts')
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4GgA1DQkaAcGLeEr_Z2G38lQzPPvHQBo"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript" src="/js/run_google_maps.js"></script>
 @endpush
