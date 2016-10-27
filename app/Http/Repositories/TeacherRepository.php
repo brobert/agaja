@@ -24,19 +24,17 @@ class TeacherRepository extends ResourceRepository {
     public function getById( $teacherId ) {
         // temporary mock
 
-        $teacher = $this->model->with('user')->find( $teacherId );
+        $teacher = $this->model->with('user')->findOrFail( $teacherId );
         return $teacher;
 
     }
 
+    /**
+     *
+     * @method getAll
+     * TeacherRepository
+     */
     public function getAll() {
-
-//         $data = [];
-//         for ($i = 6; $i <= 11; $i++ ) {
-//             $data[] = $this->getById( $i );
-//         }
-
-//         return $data;
 
         return $this->model->with('user')->get();
     }
