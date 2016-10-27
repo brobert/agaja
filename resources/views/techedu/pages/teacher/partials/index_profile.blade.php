@@ -11,7 +11,7 @@
         <div class="teacher-column-carousel-text">
             <h4>
                 <a href="{{route('teacher_show', ['id' => $teacher->id ])}}">
-                    {{ $teacher->name}} {{ $teacher->surname}}
+                    {{ $teacher->user->name}} {{ $teacher->user->surname}}
                 </a>
             </h4>
             <span>{{ $teacher->position }}</span>

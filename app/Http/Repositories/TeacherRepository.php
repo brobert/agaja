@@ -24,19 +24,9 @@ class TeacherRepository extends ResourceRepository {
     public function getById( $teacherId ) {
         // temporary mock
 
-        return $this->model->find( $teacherId );
+        $teacher = $this->model->with('user')->find( $teacherId );
+        return $teacher;
 
-        $data = [
-            'id'    => (int) $teacherId,
-            'name'  => 'Lorem Ipsum' . $teacherId,
-            'photo' => $teacherId,
-            'desc'  => 'Curabitur id mi eget arcu volutpat fermentum. Nulla facilisi. Praesent bibendum nibh quis purus tincidunt scelerisque. Vivamus tristique gravida est in sodales. Maecenas eget mauris',
-            'skills' => 'Rehabilitant w USD Kraków-Prokocim',
-            'degree' => 'Magister rehabilitacji, AWF Kraków',
-            'courses' => 'Rehabilitacja dzieicęca',
-            'social_media' => false,
-        ];
-        return (object) $data;
     }
 
     public function getAll() {
@@ -48,6 +38,6 @@ class TeacherRepository extends ResourceRepository {
 
 //         return $data;
 
-        return $this->model->get();
+        return $this->model->with('user')->get();
     }
 }

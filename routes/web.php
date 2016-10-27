@@ -16,7 +16,7 @@ Route::get( '/about', 'AboutUsController@index')->name('about');
 Route::get( '/contact', 'ContactController@index')->name('contact');
 
 Route::group( ['prefix' => 'agaja'], function() {
-    Route::get( '/', 'AgajaController@index')->name('agaja');
+    Route::get( '/', 'AboutUsController@index')->name('agaja');
 });
 
 Route::group( ['prefix' => 'teacher'], function() {
@@ -33,3 +33,8 @@ Route::group( ['prefix' => 'therapy'], function() {
 //     Route::get( '/', 'EventController@index')->name('event');
 //     Route::get( '/{id}', 'EventController@show')->name('event_show');
 // });
+
+Auth::routes();
+Route::get('/logout', 'Auth\LoginController@logout')->name('get_logout');
+
+Route::get('/home', 'HomeController@index');

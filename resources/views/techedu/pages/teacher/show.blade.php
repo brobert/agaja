@@ -21,10 +21,10 @@
                     @endif
                 </div>
                 <div class="teacher-details-info">
-                    <h4>{{$teacher->name}} {{$teacher->surname}}</h4>
+                    <h4>{{$teacher->user->name}} {{$teacher->user->surname}}</h4>
                     <span>{{$teacher->position }}</span>
                     <div class="teacher-info-text">
-                        <span><i class="fa fa-envelope"></i>Email: {{$teacher->email}}</span>
+                        <span><i class="fa fa-envelope"></i>Email: {{ Html::email( $teacher->user->email ) }}</span>
                     </div>
                     <div class="teacher-about-info">
 

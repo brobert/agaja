@@ -13,14 +13,21 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('users');
+
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
+            $table->string('surname');
             $table->string('email')->unique();
+            $table->string('login')->unique();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
         });
+
+
+        Artisan::call('db:seed', array('--class' => 'UserSeeder'));
     }
 
     /**

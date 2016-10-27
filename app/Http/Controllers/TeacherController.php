@@ -36,10 +36,10 @@ class TeacherController extends AppController
     protected function showData( $id, Request $request )
     {
         $teacher_data = $this->repository->getById($id);
+        $this->addCrumb( sprintf("%s %s", $teacher_data->user->name, $teacher_data->user->surname ) );
         $this->setData('teacher', $teacher_data );
 
         // add breadcrumb
-        $this->addCrumb( $teacher_data->name );
     }
 
 
