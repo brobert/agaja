@@ -30,7 +30,10 @@ class TherapyRepository extends ResourceRepository {
                     'social_media' => false,
                 ],
             ],
-            'id' => 1, 'name' => 'Terapia neurologopedyczna', 'cost' => '70 zł / 50 min'],
+            'id' => 1,
+            'name' => 'Terapia neurologopedyczna',
+            'cost' => '70 zł / 50 min'
+        ],
         2 => [
             'therapists' => [
                 [
@@ -636,34 +639,37 @@ class TherapyRepository extends ResourceRepository {
      */
     public function getById( $id ) {
         // temporary mock
-        $therapy = isset($this->data[$id])? (object) $this->data[$id]: null;
 
-        if ( isset( $therapy->therapists) ) {
-            foreach( $therapy->therapists as $k => $v ) {
-                $therapy->therapists[$k] = (object) $v;
-            }
-        }
+        $therapy = $this->model->findOrFail( $id );
         return $therapy;
+//         $therapy = isset($this->data[$id])? (object) $this->data[$id]: null;
+
+//         if ( isset( $therapy->therapists) ) {
+//             foreach( $therapy->therapists as $k => $v ) {
+//                 $therapy->therapists[$k] = (object) $v;
+//             }
+//         }
+//         return $therapy;
     }
 
     public function getAll( $request ) {
 
-        $data = [];
-        foreach( array_keys( $this->data ) as $id) {
-            $data[] = $this->getById( $id );
-        }
+//         $data = [];
+//         foreach( array_keys( $this->data ) as $id) {
+//             $data[] = $this->getById( $id );
+//         }
 
-        if ( $request->has('_search') ) {
-            $tmp_data = [];
+//         if ( $request->has('_search') ) {
+//             $tmp_data = [];
 
-            foreach( $data as $item ) {
-                if ( $this->_searchItem($request->input('_search'), $item) ) {
-                    $tmp_data[] = $item;
-                }
-            }
-            $data = $tmp_data;
-        }
-        return $data;
+//             foreach( $data as $item ) {
+//                 if ( $this->_searchItem($request->input('_search'), $item) ) {
+//                     $tmp_data[] = $item;
+//                 }
+//             }
+//             $data = $tmp_data;
+//         }
+//         return $data;
 
         return $this->model->get();
     }

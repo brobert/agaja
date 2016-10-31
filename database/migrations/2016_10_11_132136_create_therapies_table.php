@@ -13,10 +13,19 @@ class CreateTherapiesTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('therapies');
+
         Schema::create('therapies', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name', 150);
+            $table->text('description');
+            $table->string('duration', 100);
+            $table->string('cost', 100);
             $table->timestamps();
         });
+
+
+        Artisan::call('db:seed', array('--class' => 'TherapySeeder'));
     }
 
     /**
