@@ -4,7 +4,7 @@
             <a href="{{route('teacher_show', ['id' => $teacher->id ])}}">
                 <img src="img/teacher/{{ $teacher->photo}}" alt="">
                 <span class="image-hover">
-                    <span><i class="fa fa-edit"></i>View Profile</span>
+                    <span><i class="fa fa-edit"></i>{{ trans('common.read_more')}}</span>
                 </span>
             </a>
         </div>

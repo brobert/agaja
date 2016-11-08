@@ -38,3 +38,11 @@ Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout')->name('get_logout');
 
 Route::get('/home', 'HomeController@index');
+
+Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Admin' ], function() {
+    Route::get( '/', 'AdminController@index')->name('admin');
+
+    Route::get( '/setting', 'SettingController@index')->name('setting');
+    Route::get( '/account', 'AccountController@index')->name('account');
+
+});

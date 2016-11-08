@@ -53,7 +53,7 @@
                                                 <li><a href="{{route('teacher_show', ['id' => 7])}}">Ola</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{route('contact')}}">Contact</a></li>
+                                        <li><a href="{{route('contact')}}">{{trans('page.menu.contact')}}</a></li>
                                     </ul>
                                 </nav>
                             </div>

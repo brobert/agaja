@@ -3,7 +3,7 @@
         <li>
             <a href="#"><i class="fa fa-key"></i>{{trans('page.login')}}</a>
             <div class="login-form">
-                <h4>{{trans('page.login')}}</h4>
+                <h4>{{trans('page.login_title')}}</h4>
                 <form action="{{route('login')}}" method="post">
                     {{csrf_field()}}
                     <div class="form-box">
@@ -15,7 +15,7 @@
                         <input type="password" name="password" placeholder="{{trans('placeholder.password')}}">
                     </div>
                     <div class="button-box">
-                        <button type="submit" class="login-btn">{{trans('page.login')}}</button>
+                        <button type="submit" class="login-btn">{{trans('page.login_button')}}</button>
                     </div>
                 </form>
             </div>
