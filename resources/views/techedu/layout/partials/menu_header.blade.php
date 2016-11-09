@@ -5,10 +5,12 @@
             <div class="row">
                 <div class="col-md-7 col-sm-7 hidden-xs">
                     <div class="header-top-info">
-                        <span>{{trans('page.opened')}}</span>
+                        <span>@lang('page.opened', [ 'begin' => config( 'agaja.begin' ), 'end' => config( 'agaja.end' ) ])</span>
                         <div class="social-links">
-                            <a href="https://www.facebook.com/GabinetAgaja" target="blank"><i class="fa fa-facebook"></i></a>
-                        </div>
+                            @foreach (config( 'agaja.social_media' ) as $name => $link )
+                                <a href="{{$link}}" target="blank"><i class="fa fa-{{$name}}"></i></a>
+                            @endforeach
+                          </div>
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-5">
@@ -28,7 +30,9 @@
                 <div class="row">
                     <div class="col-md-2 col-sm-12">
                         <div class="logo">
-                            <a href="/"><img src="/img/logo/logo-agaja.png" alt="Agaja"></a>
+                            <a href="{{route('home')}}" title="{{ config('agaja.logo.title') }}">
+                                <img src="{{ config('agaja.logo.src') }}" alt="{{ config('agaja.logo.title') }}">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-10 hidden-sm hidden-xs">
@@ -49,8 +53,8 @@
                                         </li>
                                         <li><a href="/teacher">{{trans('page.menu.teacher')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="{{route('teacher_show', ['id' => 6])}}">Agnieszka</a></li>
-                                                <li><a href="{{route('teacher_show', ['id' => 7])}}">Ola</a></li>
+                                                <li><a href="{{route('teacher_show', ['id' => 1])}}">Agnieszka</a></li>
+                                                <li><a href="{{route('teacher_show', ['id' => 2])}}">Ola</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{route('contact')}}">{{trans('page.menu.contact')}}</a></li>

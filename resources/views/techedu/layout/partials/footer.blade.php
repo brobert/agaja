@@ -4,9 +4,9 @@
             <div class="col-md-12">
                 <div class="footer-info-container text-center section-padding">
                     <div class="footer-info">
-                        <span><i class="fa fa-map-marker"></i>Ul. Jerzmanowskiego 37, Kraków</span>
-                        <span><i class="fa fa-envelope"></i>biuro@agaja.pl</span>
-                        <span><i class="fa fa-phone"></i>+48 12 1234567</span>
+                        <span><i class="fa fa-map-marker"></i>{{ config('agaja.adress')}}</span>
+                        <span><i class="fa fa-envelope"></i>{{ config('agaja.email')}}</span>
+                        <span><i class="fa fa-phone"></i>{{ config('agaja.phone')}}</span>
                     </div>
                 </div>
             </div>
