@@ -33,24 +33,31 @@
             </div>
             <div class="col-md-8">
                 <div class="teacher-about-info">
-                    <div class="single-title">
-                        <h3>About</h3>
-                    </div>
-                        <div class="teacher-info-text">
-{{--                            <span>
-                                <i class="fa fa-graduation-cap"></i>
-                                <span class="fa about-label">{{trans('teacher.degree')}}: </span>
-                                {{ $teacher->education }}
-                            </span>
---}}
-                            @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.degree', 'items' => $teacher->education])
+                    <ul class="nav nav-tabs mb-10">
+                        <li class="active">
+                            <a data-toggle="tab" href="#about">{{ trans('teacher.info.about') }}</a>
+                        </li>
+                        @foreach (['education', 'skills', 'courses' ] as $type )
+                            @if ( count( $teacher->$type ))
+                                <li>
+                                    <a data-toggle="tab" href="#{{$type}}">{{ trans('teacher.info.' .$type ) }}</a>
+                                </li>
+                            @endif
+                        @endforeach
+                    </ul>
 
-                            @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.skills', 'items' => $teacher->skills])
-
-                            @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.courses', 'items' => $teacher->courses])
-
+                    <div class="tab-content">
+                        <div id="about" class="tab-pane fade in active">
+                            <p>{{$teacher->description}}</p>
                         </div>
-                    <p>{{$teacher->description}}</p>
+                        @foreach (['education', 'skills', 'courses' ] as $type )
+                            @if ( count( $teacher->$type ))
+                                <div id="{{ $type }}" class="tab-pane fade">
+                                    @include('techedu/pages/teacher/partials/skills', ['label' => 'teacher.' . $type, 'items' => $teacher->$type ])
+                                </div>
+                            @endif
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>

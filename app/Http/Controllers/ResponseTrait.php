@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\View;
+use Log;
 
 trait ResponseTrait {
 
@@ -36,6 +38,11 @@ trait ResponseTrait {
 
     protected function respond( $httpCode = 200 )
     {
+        Log::debug('try to load view: ' . $this->view );
+        if ( !View::exists($this->view)) {
+            $this->view = 'errors.503';
+            $httpCode = 404;
+        }
         return
         response()
         ->view($this->view, $this->data, $httpCode);

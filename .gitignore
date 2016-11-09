@@ -1,6 +1,7 @@
 vendor
 .env
 .project
-public_html
 /.settings/
 /.buildpath
+public_html
+composer.lock

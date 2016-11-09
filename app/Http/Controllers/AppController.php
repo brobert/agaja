@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use Log;
+use Route;
 
 class AppController extends Controller
 {
@@ -39,7 +41,7 @@ class AppController extends Controller
         $this->setData('banner_title', '');
         $this->addCrumb( trans ('page.menu.home'), route('home') );
 
-        if ( $this->base ) {
+        if ( $this->base && Route::has( $this->base )) {
             $this->addCrumb( trans ('page.menu.' . $this->base ), route( $this->base ) );
         }
     }
@@ -50,6 +52,7 @@ class AppController extends Controller
         {
             $this->data['bread_crumbs'] = [];
         }
+
 
         $this->data['bread_crumbs'][] = [
             'url'   => $url,
