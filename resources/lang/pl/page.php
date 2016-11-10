@@ -7,7 +7,10 @@ return [
         'offer'     => 'Oferta',
         'therapy'   => 'Oferta',
         'teacher'   => 'Kadra',
-        'contact'   => 'Kontakt'
+        'contact'   => 'Kontakt',
+        'account'   => 'Perosnalizuj',
+        'settings'  => 'Ustawienia',
+        'logout'    => 'Wyloguj',
     ],
     'login'     => 'Logowanie',
     'logout'    => 'Wyloguj',

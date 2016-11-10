@@ -8,35 +8,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <img alt="{{Auth::user()->name}}" src="/img/teacher/1.jpg">
+                <img title="{{ $teacher->get_full_name() }}" alt="{{ $teacher->get_full_name() }}" src="/img/teacher/{{$teacher->photo or '1.jpg'}}">
             </div>
             <div class="col-md-8">
-                <ul class="nav nav-tabs mb-10">
-                    <li class="active">
-                        <a data-toggle="tab" href="#home">Home</a>
-                    </li>
-                    <li>
-                        <a data-toggle="tab" href="#menu1">Menu 1</a>
-                    </li>
-                    <li>
-                        <a data-toggle="tab" href="#menu2">Menu 2</a>
-                    </li>
-                </ul>
+                    @if( ( Auth::user()->type or 'teacher' ) == 'teacher' )
+                        @include( 'techedu/pages/account/partials/form_teacher', $teacher )
+                    @endif
 
-                <div class="tab-content">
-                    <div id="home" class="tab-pane fade in active">
-                        <h3>HOME</h3>
-                        <p>Some content.</p>
-                    </div>
-                    <div id="menu1" class="tab-pane fade">
-                        <h3>Menu 1</h3>
-                        <p>Some content in menu 1.</p>
-                    </div>
-                    <div id="menu2" class="tab-pane fade">
-                        <h3>Menu 2</h3>
-                        <p>Some content in menu 2.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -4,9 +4,9 @@
             <a href="#"><i class="fa fa-user"></i>{{ Auth::user()->name}} {{ Auth::user()->surname}}</a>
             <div class="login-form">
                 <ul>
-                    <li><a href="{{ route('account') }}"><i class="fa fa-lock"></i>{{trans('page.menu.account')}}</a></li>
-                    <li><a href="{{ route('setting') }}"><i class="fa fa-lock"></i>{{trans('page.menu.admin.settings')}}</a></li>
-                    <li><a href="{{ route('logout') }}"><i class="fa fa-lock"></i>{{trans('page.menu.logout')}}</a></li>
+                    <li><a href="{{ route('account') }}"><i class="fa fa-user"></i>{{trans('page.menu.account')}}</a></li>
+                    <li><a href="{{ route('setting') }}"><i class="fa fa-cog"></i>{{trans('page.menu.settings')}}</a></li>
+                    <li><a href="{{ route('logout') }}"><i class="fa fa-power-off"></i>{{trans('page.menu.logout')}}</a></li>
                 </ul>
             </div>
         </li>

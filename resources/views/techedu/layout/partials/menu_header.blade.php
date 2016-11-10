@@ -53,8 +53,9 @@
                                         </li>
                                         <li><a href="/teacher">{{trans('page.menu.teacher')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="{{route('teacher_show', ['id' => 1])}}">Agnieszka</a></li>
-                                                <li><a href="{{route('teacher_show', ['id' => 2])}}">Ola</a></li>
+                                            @foreach( $menu_teachers as $teacher )
+                                                <li><a href="{{route('teacher_show', ['id' => $teacher->id ])}}">{{ $teacher->get_full_name()}}</a></li>
+                                            @endforeach
                                             </ul>
                                         </li>
                                         <li><a href="{{route('contact')}}">{{trans('page.menu.contact')}}</a></li>

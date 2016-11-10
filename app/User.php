@@ -35,4 +35,8 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Models\Teacher');
     }
+
+    public function get_full_name() {
+        return sprintf("%s %s", $this->name, $this->surname );
+    }
 }

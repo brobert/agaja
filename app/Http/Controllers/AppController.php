@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Log;
 use Route;
+use App\Models\Teacher;
+use App\Http\Repositories\TeacherRepository;
 
 class AppController extends Controller
 {
@@ -38,7 +40,9 @@ class AppController extends Controller
     {
         $this->repository = $repository;
 
+        $teacherRepo = new TeacherRepository( new Teacher() );
         $this->setData('banner_title', '');
+        $this->setData('menu_teachers', $teacherRepo->getAll()->sortBy('surname')->take(4) );
         $this->addCrumb( trans ('page.menu.home'), route('home') );
 
         if ( $this->base && Route::has( $this->base )) {

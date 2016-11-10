@@ -10,9 +10,9 @@ class AdminController extends AppController
     //
     protected $base = 'admin';
 
-    public function __construct()
+    public function __construct( $repository )
     {
-        parent::__construct();
+        parent::__construct( $repository );
         $this->setData('banner_title', $this->base );
 
     }
