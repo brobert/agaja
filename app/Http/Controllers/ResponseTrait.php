@@ -38,14 +38,12 @@ trait ResponseTrait {
 
     protected function respond( $httpCode = 200 )
     {
-        Log::debug('try to load view: ' . $this->view );
         if ( !View::exists($this->view)) {
             $this->view = 'errors.503';
             $httpCode = 404;
         }
-        return
-        response()
-        ->view($this->view, $this->data, $httpCode);
+        Log::debug('try to load view: ' . $this->view . print_r($this->data, 1) );
+        return response()->view($this->view, $this->data, $httpCode);
     }
 
 }

@@ -26,9 +26,7 @@ class HomeController extends AppController
 
     public function indexData( Request $request )
     {
-        $this->setData([
-            'therapies' => $this->res['therapy']->getAll( $request ),
-            'teachers' => $this->res['teacher']->getAll( $request ),
-        ]);
+        $this->setData( 'therapies', $this->res['therapy']->getAll( $request ) );
+        $this->setData( 'teachers', $this->res['teacher']->getAll( $request ));
     }
 }

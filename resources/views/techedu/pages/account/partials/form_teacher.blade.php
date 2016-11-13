@@ -13,7 +13,7 @@
 
 <div class="tab-content">
     <div id="about" class="tab-pane fade in active">
-        <p>{{$teacher->description}}</p>
+        {{ Form::textarea('description') }}
     </div>
     @foreach (['education', 'skills', 'courses' ] as $type )
         @if ( count( $teacher->$type ))

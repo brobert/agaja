@@ -11,8 +11,8 @@ class Teacher extends Model
 
     protected $guarded = [];
 
-    public function get_full_name() {
-        return $this->user->get_full_name();
+    public function getFullName() {
+        return $this->user->getFullName();
     }
 
     /***********************************************************

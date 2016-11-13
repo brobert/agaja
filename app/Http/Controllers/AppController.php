@@ -40,10 +40,9 @@ class AppController extends Controller
     {
         $this->repository = $repository;
 
-        $teacherRepo = new TeacherRepository( new Teacher() );
         $this->setData('banner_title', '');
-        $this->setData('menu_teachers', $teacherRepo->getAll()->sortBy('surname')->take(4) );
         $this->addCrumb( trans ('page.menu.home'), route('home') );
+        $this->load_menu_teachers();
 
         if ( $this->base && Route::has( $this->base )) {
             $this->addCrumb( trans ('page.menu.' . $this->base ), route( $this->base ) );
@@ -64,5 +63,8 @@ class AppController extends Controller
         ];
     }
 
-
+    private function load_menu_teachers() {
+        $teacherRepo = new TeacherRepository( new Teacher() );
+        $this->setData('menu_teachers', $teacherRepo->get_for_menu() );
+    }
 }

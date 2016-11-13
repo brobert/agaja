@@ -54,7 +54,7 @@
                                         <li><a href="/teacher">{{trans('page.menu.teacher')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
                                             @foreach( $menu_teachers as $teacher )
-                                                <li><a href="{{route('teacher_show', ['id' => $teacher->id ])}}">{{ $teacher->get_full_name()}}</a></li>
+                                                <li><a href="{{route('teacher_show', ['id' => $teacher->id ])}}">{{ $teacher->getFullName()}}</a></li>
                                             @endforeach
                                             </ul>
                                         </li>

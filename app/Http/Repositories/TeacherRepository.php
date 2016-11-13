@@ -38,4 +38,8 @@ class TeacherRepository extends ResourceRepository {
 
         return $this->model->with('user')->get();
     }
+
+    public function get_for_menu() {
+        return $this->getAll()->sortBy('surname')->take(3);
+    }
 }

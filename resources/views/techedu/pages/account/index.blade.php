@@ -7,8 +7,10 @@
 <div class="teacher-details-area section-padding">
     <div class="container">
         <div class="row">
+            {{ Form::model($teacher) }}
             <div class="col-md-4">
-                <img title="{{ $teacher->get_full_name() }}" alt="{{ $teacher->get_full_name() }}" src="/img/teacher/{{$teacher->photo or '1.jpg'}}">
+                <img title="{{ $teacher->getFullName() }}" alt="{{ $teacher->getFullName() }}" src="/img/teacher/{{$teacher->photo or '1.jpg'}}">
+                {{ Form::text('user[name]' ) }}
             </div>
             <div class="col-md-8">
                     @if( ( Auth::user()->type or 'teacher' ) == 'teacher' )
@@ -16,6 +18,8 @@
                     @endif
 
             </div>
+			{{Form::submit('Zapisz', [ 'class' => 'login-btn'])}}
+            {{ Form::close()}}
         </div>
     </div>
 </div>

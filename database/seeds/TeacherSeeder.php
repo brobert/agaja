@@ -91,7 +91,7 @@ class TeacherSeeder extends Seeder
                 'photo'       => 'agata_glowacka.jpg',
                 'position'    => 'Rehabilitant',
                 'education'   => ['WSP Kraków'],
-                'skills'      => [''],
+                'skills'      => [],
                 'courses'     => [],
                 'description' => 'Mgr Oligofrenopedagog, absolwentka Pedagogiki Specjalnej (Uniwersytet Pedagogiczny w Krakowie), oraz Terapii Pedagogicznej z Rewalidacją Indywidualną. Wieloletni Instruktor ZHR, Terapeuta Integracji Sensorycznej I stopnia i II stopień prowadzony przez Dr Zoe Mailloux z międzynarodowym certyfikatem Stowarzyszenia Terapii Zajeciowej. Członek Zespołu działającego na rzecz osób niepełnosprawnych „Ku pełni życia”. Członek Harcerskiego Ochotnicznego Pogotowia Ratunkowego. Jako pedagog w przedszkolu i szkole integracyjnej posiada wieloletnie doświadczenie w pracy z dziećmi z zaburzeniami rozwoju. Terapeuta metody HANDLA I, II stopień.
     W swojej pracy, łączy metodę integracji sensorycznej i niedyrektywną metodę GPS– „Odmieniając Codzienne Chwile” – program metod wspierania wczesnych umiejętności społeczno-komunikacyjnych dziecka ze spektrum autyzmu przez zabawę. Doskonali się w nowoczesnych technikach pracy z dziećmi z trudnościami w szkole integracyjnej: „Nowe technologie w nauczaniu współczesnego ucznia”, „Picture Exchange Communication System – Poziom I”, „Być dobrym wychowawcą”, „Uczniowie uzdolnieni- rola szkoły w rozwoju i wspieraniu ich możliwości twórczych”, Szkolenie z zakresu stymulacji wzrokowej dziecka w okresie przedszkolnym i wczesnoszkolnym, „Metody arteterapii w pracy z dziećmi”, „Dziecko z cukrzycą w placówce oświatowej”,„ Kształtowanie gotowości do nauki czytania”, „Dziecko z zaburzeniami zachowań w grupie przedszkolnej- propozycje wspierające rodzica i nauczyciela”, „Diagnozy i terapii stymulacyjnej metodą Carla Delacato”, „Diagnoza funkcjonalna dzieci ze spektrum autyzmu”, „Diagnozy i terapii funkcji wzokowych IMPULS SYSTEM w trudnościach w czytaniu”, „Analiza rysunku dziecka”, „Kurs doskonalący I stopnia z zakresu Biblioterapii”, „Kurs wychowawców kolonijnych”, „Podstawowy Kurs Ratownictwa Przedmedycznego Harcerskiego Ochotniczego Pogotowia Ratunkowego”, „Kurs Pierwszej Pomocy Przedmedycznej z Elementami Medycyny Ratunkowej”.',
@@ -101,18 +101,13 @@ class TeacherSeeder extends Seeder
                 'photo'       => 'kasia_glowacka.jpg',
                 'position'    => 'Rehabilitant',
                 'education'   => ['WSP Kraków'],
-                'skills'      => [''],
+                'skills'      => [],
                 'courses'     => [],
                 'description' => 'Mgr pedagogiki przedszkolnej i wczesnoszkolnej Uniwersytetu Pedagogicznego. Terapeuta Integracji Sensorycznej II stopnia (2 letnie studium podyplomowe w Warszawie) oraz metody HANDLE Ii II stopnia. Zawodowo nauczyciel klas I-III w szkole integracyjnej. Pracuje z dziećmi dyslektycznymi i przeżywającymi niepowodzenia szkolne. Specjalizuje się w diagnozie i wyrównywaniu deficytów edukacyjnych u dzieci szkolnych. Ukończyła studia podyplomowe z informatyki (oraz dodatkowe kursy przygotowujące do pracy z wykorzystaniem komputera w klasach I-III). Posiada kurs kwalifikacyjny z terapii pedagogicznej. Terapeuta szkolnego programu odruchów według metody dr Sally Goddard. Przez lata prowadziła gromadę zuchową, Instruktor ZHR, Członek Harcerskiego Ochotniczego Pogotowia Ratunkowegowięc w pracy wykorzystuje zasadę nauki przez zabawę. Propagator Kinezjologi Edukacyjnej Dennisona st. I i II.',
             ]
         ];
 
         foreach( $teachersData as $teacher ) {
-//             $user = User::find($teacher['id']);
-//             $teacher['name']    = $user->name;
-//             $teacher['surname'] = $user->surname;
-//             $teacher['email']   = $user->email;
-
             App\Models\Teacher::create($teacher);
         }
     }
