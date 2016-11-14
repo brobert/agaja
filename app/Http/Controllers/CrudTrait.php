@@ -52,8 +52,8 @@ trait CrudTrait {
     public function show($id, Request $request)
     {
         $this->setView('show');
-        $this->showData( $id, $request );
-        return $this->respond();
+        $res = $this->showData( $id, $request );
+        return $res? $res: $this->respond();
     }
 
     /**

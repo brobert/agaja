@@ -24,7 +24,7 @@ class TeacherRepository extends ResourceRepository {
     public function getById( $teacherId ) {
         // temporary mock
 
-        $teacher = $this->model->with('user')->findOrFail( $teacherId );
+        $teacher = $this->model->with('user')->find( $teacherId );
         return $teacher;
 
     }

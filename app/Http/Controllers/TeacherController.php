@@ -36,6 +36,9 @@ class TeacherController extends AppController
     protected function showData( $id, Request $request )
     {
         $teacher_data = $this->repository->getById($id);
+        if ( !$teacher_data ) {
+            return back();
+        }
         $this->addCrumb( sprintf("%s %s", $teacher_data->user->name, $teacher_data->user->surname ) );
         $this->setData('teacher', $teacher_data );
 

@@ -41,4 +41,9 @@ class LoginController extends Controller
     {
         return 'login';
     }
+
+    public function showLoginForm()
+    {
+        return view('techedu.pages.auth.login');
+    }
 }

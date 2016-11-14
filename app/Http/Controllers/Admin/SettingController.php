@@ -12,7 +12,7 @@ class SettingController extends AdminController
 
     public function __construct()
     {
-        parent::__construct();
+        parent::__construct( null );
         $this->setData('banner_title', $this->base );
     }
 }
