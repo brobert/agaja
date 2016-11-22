@@ -42,7 +42,7 @@ trait ResponseTrait {
             $this->view = 'errors.503';
             $httpCode = 404;
         }
-        Log::debug('try to load view: ' . $this->view . print_r($this->data, 1) );
+//         Log::debug('try to load view: ' . $this->view . print_r($this->data, 1) );
         return response()->view($this->view, $this->data, $httpCode);
     }
 

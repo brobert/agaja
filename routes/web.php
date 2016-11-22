@@ -44,5 +44,6 @@ Route::group( [ 'prefix' => 'admin', 'middleware' => 'auth', 'namespace' => 'Adm
 
     Route::get( '/setting', 'SettingController@index')->name('setting');
     Route::get( '/account', 'AccountController@index')->name('account');
+    Route::post('/account', 'AccountController@update_account')->name('update_account');
 
 });

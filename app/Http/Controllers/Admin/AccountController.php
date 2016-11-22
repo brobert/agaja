@@ -30,4 +30,10 @@ class AccountController extends AdminController
         Log::debug('AAAAAAAAAAAAAAAAAAAAAAAAAAAA ' . Auth::user()->id );
         $this->setData('teacher', $this->repository->getById( Auth::user()->id ) );
     }
+
+    public function update_account( Request $request)
+    {
+        Log::debug('AccountController::update_account::');
+        return $this->repository->update(Auth::user()->id, $request->all() );
+    }
 }

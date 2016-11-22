@@ -110,6 +110,7 @@
         <script src="/js/main.js"></script>
 
         @stack('scripts')
+
     </body>
 
 <!-- Mirrored from devitems.com/tf/techedu-preview/techedu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2016 16:18:11 GMT -->

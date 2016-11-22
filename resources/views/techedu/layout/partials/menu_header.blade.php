@@ -43,7 +43,14 @@
                                         <li class="current">
                                             <a href="{{route('home')}}">{{trans('page.menu.home')}}</a>
                                          </li>
-                                        <li><a href="/about">{{trans('page.menu.about')}}</a></li>
+                                        <li>
+                                            <a href="{{route('about')}}">{{trans('page.menu.about')}}<i class="fa fa-angle-down"></i></a>
+                                            <ul class="sub-menu">
+                                                <li><a href="{{route('about', ['#history'])}}">{{trans('page.menu.about_history')}}</a></li>
+                                                <li><a href="{{route('about', ['#offer'])}}">{{trans('page.menu.about_offer')}}</a></li>
+                                                <li><a href="{{route('about', ['#stuff'])}}">{{trans('page.menu.about_stuff')}}</a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="{{route('therapy')}}">{{trans('page.menu.therapy')}}<i class="fa fa-angle-down"></i></a>
                                             <ul class="sub-menu">
                                                 <li><a href="{{route('therapy_show', ['id' => 1])}}">Terapia 1</a></li>

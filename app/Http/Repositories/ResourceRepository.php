@@ -1,5 +1,6 @@
 <?php namespace App\Http\Repositories;
 
+use Log;
 abstract class ResourceRepository {
 
     protected $model;
@@ -19,6 +20,9 @@ abstract class ResourceRepository {
     }
 
     public function update($id, Array $inputs) {
+
+        Log::debug('ResourceRepository::update::ID:'.$id);
+        Log::debug('ResourceRepository::update::DATA:'.print_r( $inputs, true ));
         return $this->getById($id)->fill($inputs)->save();
     }
 

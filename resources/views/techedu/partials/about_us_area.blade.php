@@ -3,6 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <a name="history"></a>
                 <div class="section-title-wrapper">
                     <div class="section-title">
                         <h3>Kim Jesteśmy</h3>

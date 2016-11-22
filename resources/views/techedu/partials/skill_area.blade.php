@@ -3,6 +3,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <a name="offer"></a>
                 <div class="section-title-wrapper">
                     <div class="section-title">
                         <h3>Co oferujemy</h3>

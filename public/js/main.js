@@ -139,11 +139,11 @@
     Teacher Column Carousel
 ------------------------------ */  
     $(".teachers-column-carousel").owlCarousel({
-        autoPlay: false, 
+        autoPlay: true, 
         slideSpeed:2000,
-        pagination:false,
+        pagination:true,
         navigation:true,	  
-        items : 4,
+        items : 3,
         /* transitionStyle : "fade", */    /* [This code for animation ] */
         navigationText:["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
         itemsDesktop : [1199,4],
