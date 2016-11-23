@@ -34,6 +34,7 @@ class AccountController extends AdminController
     public function update_account( Request $request)
     {
         Log::debug('AccountController::update_account::');
-        return $this->repository->update(Auth::user()->id, $request->all() );
+        $res = $this->repository->update(Auth::user()->id, $request->only(['description']) );
+        return back();
     }
 }
