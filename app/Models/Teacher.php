@@ -11,6 +11,15 @@ class Teacher extends Model
 
     protected $guarded = [];
 
+    protected $fillable = [
+        'photo',
+        'position',
+        'education',
+        'skills',
+        'courses',
+        'description'
+    ];
+
     public function getFullName() {
         return $this->user->getFullName();
     }

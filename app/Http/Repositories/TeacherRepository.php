@@ -2,6 +2,7 @@
 namespace App\Http\Repositories;
 
 use App\Models\Teacher;
+use Log;
 
 class TeacherRepository extends ResourceRepository {
 
@@ -41,5 +42,14 @@ class TeacherRepository extends ResourceRepository {
 
     public function get_for_menu() {
         return $this->getAll()->sortBy('surname')->take(3);
+    }
+
+    public function update($id, Array $inputs) {
+
+        $teacher = $this->getById($id);
+        Log::debug('TeacherRepository::update::ID:'.$id);
+        Log::debug('TeacherRepository::update::getFillable:'.print_r( $teacher->getFillable(), true ));
+        Log::debug('TeacherRepository::update::getAttributes:'.print_r( $teacher->getAttributes(), true ));
+        return $this->getById($id)->fill($inputs)->save();
     }
 }
