@@ -1,11 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Traits;
 
 use Illuminate\Support\Facades\View;
 use Log;
 
 trait ResponseTrait {
+
+    /**
+     * handler for respons data ( for view or JSON )
+     * @var $data {array}
+     */
+    protected $data = [];
+
+    protected $view = '';
 
     /**
      *

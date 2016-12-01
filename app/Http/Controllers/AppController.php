@@ -10,6 +10,9 @@ use Route;
 use App\Models\Teacher;
 use App\Http\Repositories\TeacherRepository;
 
+use App\Traits\ResponseTrait;
+use App\Traits\CrudTrait;
+
 class AppController extends Controller
 {
     use ResponseTrait,      // respons options
@@ -17,28 +20,22 @@ class AppController extends Controller
     ;
 
     /**
-     * handler for respons data ( for view or JSON )
-     * @var $data {array}
-     */
-    private $data = [];
-
-    private $view = '';
-
-    /**
      *
      */
     protected $base = '';
 
     protected $repository;
+    protected $request;
 
     /**
      *
      * @method __construct
      * AppController
      */
-    public function __construct( $repository = null )
+    public function __construct( $request, $repository = null )
     {
-        $this->repository = $repository;
+        $this->repository   = $repository;
+        $this->request      = $request;
 
         $this->setData('banner_title', '');
         $this->addCrumb( trans ('page.menu.home'), route('home') );

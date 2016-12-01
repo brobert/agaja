@@ -7,7 +7,7 @@
 <div class="teacher-details-area section-padding">
     <div class="container">
         <div class="row">
-            {{ Form::model($teacher) }}
+            {{ Form::model($teacher, array('class' => 'ajax')) }}
             <div class="col-md-4">
                 <img title="{{ $teacher->getFullName() }}" alt="{{ $teacher->getFullName() }}" src="/img/teacher/{{$teacher->photo or '1.jpg'}}">
                 {{ Form::text('user[name]' ) }}
@@ -25,3 +25,8 @@
 </div>
 
 @endsection
+
+@push('scripts')
+    {{ Html::script('/js/helpers/ajax.js') }}
+    {{ Html::script('/plugins/parsley/parsley.min.js') }}
+@endpush

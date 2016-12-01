@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('surname');
+            $table->enum('type', ['dev', 'admin', 'user'])->default('user');
             $table->string('email')->unique();
             $table->string('login')->unique();
             $table->string('password');
