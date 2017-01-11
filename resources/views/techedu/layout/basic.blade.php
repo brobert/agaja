@@ -1,8 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="">
 
-<!-- Mirrored from devitems.com/tf/techedu-preview/techedu/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 05 Oct 2016 16:17:12 GMT -->
-<head>
+    <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Gabinet terapeutyczny "Agaja"</title>
